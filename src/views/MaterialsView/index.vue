@@ -2,7 +2,7 @@
   <Header />
   <div>
     <h1 class="title font-weight-100 text-center m0 p0">组件市场</h1>
-    <div class="container mc flex justify-center items-center">
+    <div class="container mc flex ">
       <nav class="category">
       <Router-link class="category-item" to="/materials/choice">
         <el-icon><CircleCheck /></el-icon>
@@ -15,7 +15,7 @@
       </Router-link>
 
       <Router-link class="category-item" to="/materials/advanced">
-        <el-icon><Files /></el-icon>
+        <el-icon><Files /></el-icon> 
         <div>高级题型</div>
       </Router-link>
 
@@ -41,13 +41,13 @@
 
 <script setup lang="ts">
 import Header from '@/components/Common/Header.vue'
-import { ElIcon } from 'element-plus'
+// import { ElIcon } from 'element-plus'
 import { CircleCheck,Files,EditPen,ChatLineSquare,User,Message } from '@element-plus/icons-vue'
 </script>
 
 
 <style lang="scss" scoped>
-.title {
+h1 {
     height: 50px;
     margin: 20px 0;
 }
@@ -64,7 +64,7 @@ import { CircleCheck,Files,EditPen,ChatLineSquare,User,Message } from '@element-
 }
 .category{
     width:70px ;
-    height:100% ;
+    height:70px ;
     >.category-item{
       width: 70px;
       height: 70px;

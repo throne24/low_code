@@ -1,3 +1,13 @@
 <template>
-  <div>备注说明页面</div>
+    <Layout>
+      <Router-link class="link-item mb-15" to="">备注说明</Router-link>
+    </Layout>
 </template>
+
+<script setup lang="ts">
+import Layout from './Layout.vue'
+</script>
+
+<style lang="scss" scoped>
+
+</style>
